@@ -1,0 +1,125 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #BAD8F1;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+    padding: 8px;
+    min-height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 94%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.search-button {
+    background-color: #f9f2dd;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+    .search-button:hover {
+        background-color: #f4dfbf;
+    }
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; 
+    padding: 10px;
+    margin-bottom: 80px; 
+}
+
+.info {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+    .info img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .info:hover {
+        transform: translateY(-5px);
+    }
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+    .navbar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        position: relative;
+    }
+
+        .navbar a.active {
+            background-color: rgba(173, 216, 230, 0.6);
+        }
+
+        .navbar a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .navbar a.active::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(173, 216, 230, 0.3);
+            z-index: -1;
+        }

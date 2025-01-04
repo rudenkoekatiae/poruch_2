@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <link rel="stylesheet" href="entertainment.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музеї</title>
+    <body>
+        <div>
+            <div class="search-container">
+                <span class="search-icon">
+                    <img src=Search.png width="50" height="50">
+                </span>
+    
+                <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+            </div>    </div>
+    <div class="header-container">
+        <a href="profile.html" class="back-button">
+            <img src=arrow.png alt="Назад" width="40" height="40">
+        </a>
+        <h1 class="page-title">Музеї</h1>
+    </div>
+    <div class="container">
+
+        <section class="region-selection">
+            <span>Регіон: Львівщина</span>
+
+        </section>
+        <section class="centers">
+
+            <div class="center-card">
+                <img src="lvivarnia.png" alt="Лого">
+                <div class="card-content">
+                    <h2>Львіварня</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        вул. 	Клепарівська, 18 | четвер - понеділок 	11:00 - 19:00 | вівторок, середа - вихідні 
+
+                        Для 	УБД діє квиток зі знижкою, вартість  	- 108 грн
+                        
+                             Сучасний 	музейний комплекс (загальна площа - 	2000 м²): понад 1000 експонатів про історію 	пивоваріння, інтерактивні та ігрові 	інсталяції, стеля із пивних діжок, 	пізнавальні екскурсії, дегустація 	львівського пива тощо. Формат комплексу 	поєднує в собі сучасний музей та 	культурний простір - тут часто проводять 	виставки та мистецькі події.
+                        <br><br>
+                        Посилання на сайт <a href="https://lvivarnya.com.ua/">тут</a>
+                        Посилання на інстаграм <a href="https://www.instagram.com/lvivarnia/">тут</a>
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="history-museum.png">
+                <div class="card-content">
+                    <h2>Музей історії Львова</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        пл. 	Ринок, 4 | щодня 10:00 - 17:30 (каса до 17:00)  
+
+                        Безкоштовний 	вхід для УБД
+                   
+                        Свою 	назву будівля отримала від кольору 	фасаду, що почорнів під впливом 	атмосферних опадів та сажі. У дворику 	функціонує Лапідарій - виставка кам’яних 	пам’яток, різьблених з каменю. На 	другому та третьому поверсі розташована 	експозиція, яка складається з предметів 	та артефактів різних історичних періодів 	Львова.
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="glass-museum.png">
+                <div class="card-content">
+                    <h2>Музей скла</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        пл. 	Ринок, 2 | щодня 10:00 -18:00 
+
+                        Безкоштовний 	вхід для УБД
+                   
+                        Музей 	знаходиться у підземеллі старовинної 	кам’яниці на площі Ринок. Колекція 	налічує понад 350 робіт. В історичній 	складовій Музею скла представлені 	артефакти від І-ІІ ст. н.е. Сучасне 	мистецтво художнього скла експоноване 	творами, які виконані митцями з усього 	світу.
+               <br><br>
+                Посилання на сайт: <a href="https://glassmuseuminlviv.org/">тут</a>
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="franko-house.png">
+                <div class="card-content">
+                    <h2>Дім Франка</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        вул. І. Франка, 150-152 | середа - понеділок 10:00 - 17:00 | вівторок - вихідний 
+
+                        Безкоштовно музей можуть відвідати:
+                             діти 	учасників АТО/ООС;
+                             учасники 	бойових дій, зокрема російсько-української 	війни, АТО/ООС;
+                             члени 	сім’ї загиблого (померлого) учасника 	бойових дій, АТО/ООС;
+                             військовослужбовці 	строкової служби рядового, сержантського, 	старшинського складу;
+                             учасники 	ліквідації аварії на Чорнобильській 	АЕС;
+                             особи, 	які отримали статус постраждалого 	учасника Революції Гідності;  герої 	України
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+</div>
+<script src="info-containers.js"></script>
+</body>
+</html>
+<script>
+function toggleInfo(button) {
+    const cardContent = button.parentElement; 
+    const fullText = cardContent.querySelector('.full-text'); 
+    const shortText = cardContent.querySelector('.short-text'); 
+    
+    if (fullText.style.display === 'none') {
+        fullText.style.display = 'block'; 
+        button.textContent = 'Менше <'; 
+    } else {
+        fullText.style.display = 'none'; 
+        button.textContent = 'Більше >';    
+    }
+}
+</script>

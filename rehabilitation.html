@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поруч</title>
+    <link rel="stylesheet" href="law-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="rehabilitation">
+    <div>
+        <div class="search-container">
+            <span class="search-icon">
+                <img src=Search.png width="50" height="50">
+            </span>
+
+            <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+        </div>
+        <div class="header-container">
+            <a href="info.html" class="back-button">
+                <img src=arrow.png alt="Психолог" width="40" height="40">
+            </a>
+            <h1 class="page-title">Отримайте якісну реабілітацію від перевірених центрів</h1>
+        </div>
+        <div class="container">
+
+            <section class="region-selection">
+                <span>Регіон: Львівщина</span>
+
+            </section>
+            <section class="centers">
+                <h2>
+                    Реабілітаційні центри для постраждалих від війни
+                </h2>
+
+                <div class="center-card">
+                    <img src="reh1.png" alt="Лого">
+                    <div class="card-content">
+                        <h2>Superhumans Center</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Сучасна клініка з протезування, реконструктивної хірургії, реабілітації та психологічної підтримки
+                            постраждалих від війни. Лікування у клініці буде безкоштовним.
+                            <br><br>
+                            Посилання на сайт: <a href="https://superhumans.com/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="reh2.png">
+                    <div class="card-content">
+                        <h2>Реабілітаційний центр “Галичина”</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Проходять реабілітацію лише військові.
+                            Тут поранені можуть отримати послуги з комплексної реабілітації.
+                            <br><br>
+                            Важливо! Для поранених військових організовують різні заходи та екскурсії. Окрім того, центр практикує іпотерапію
+                            (методика заснована на використанні коней для реабілітації) та арттерапію.
+                            <br><br>
+                            Посилання на сайт: <a href="https://www.reabl.lviv.ua/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="reh3.png">
+                    <div class="card-content">
+                        <h2>Recovery</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Оснащений сучасним обладнанням,
+                            а також облаштований з урахуванням вимог інклюзивних стандартів.
+                            <br><br>
+                            На першому поверсі розміщена лікувально-реабілітаційна база. Там є зал фізичної реабілітації та кабінет апаратної фізіотерапії, котрий обладнаний відповідно до міжнародних стандартів
+                            Фахівці центру використовують обладнання з віртуальною реальністю, що допомагає військовим відновлювати втрачені функції.
+                            <br><br>
+                            Посилання на сайт: <a href="">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="reh4.png">
+                    <div class="card-content">
+                        <h2>“Незламні”</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Це великий та сучасний мультидисциплінарний центр, де військові та цивільні, які отримали
+                            поранення внаслідок війни, можуть пройти повний курс лікування.
+                            <br><br>
+                            Всю медичну допомогу пацієнти отримують безплатно!
+                            <br><br>
+                            Посилання на сайт: <a href="https://unbroken.org.ua/ua">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <script src="info-containers.js"></script>
+</body>
+</html>

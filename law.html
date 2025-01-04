@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поруч</title>
+    <link rel="stylesheet" href="law-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="law">
+
+    <div class="search-container">
+        <span class="search-icon">
+            <img src=Search.png width="50" height="50">
+        </span>
+
+        <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+    </div>
+    <div class="header-container">
+        <a href="info.html" class="back-button">
+            <img src=arrow.png alt="Психолог" width="40" height="40">
+        </a>
+        <h1 class="page-title">Отримайте якісну юридичну підтримку від перевірених центрів</h1>
+    </div>
+    <div class="container">
+
+        <section class="region-selection">
+            <span>Регіон: Львівщина</span>
+
+        </section>
+        <section class="centers">
+            <h2>Юридичні консультації для постраждалих від війни</h2>
+
+            <div class="center-card">
+                <img src="law1.png" alt="Лого">
+                <div class="card-content">
+                    <h2>Партнери Мережі UPLAN</h2>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        Допомагають знайти рішення для
+                        внутрішньопереміщених осіб
+                        і військовослужбовців, а також
+                        членів їхніх сімей
+                        <br><br>
+                        Посилання на Facebook-сторінку: <a href="https://www.facebook.com/lawdemo/">тут</a>
+                    </span>
+                </div>
+                <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+            </div>
+
+            <div class="center-card">
+                <img src="law2.png">
+                <div class="card-content">
+                    <h2>Благодійний фонд «Карітас-Львів УГКЦ»</h2>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        Якщо ви постраждали від російської агресії:
+                        потрапили під вплив шахраїв, стали жертвою мародерів,
+                        маєте запитання, які турбують – запрошуємо на безкоштовну
+                        консультацію нашого юриста (спеціаліста з адвокації).
+                        <br><br>
+                        Посилання на сайт: <a href="http://caritas-lviv.org/2022/05/20/yuridichni-konsultatsiyi/">тут</a>
+                    </span>
+                </div>
+                <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+            </div>
+
+            <div class="center-card">
+                <img src="law3.png">
+                <div class="card-content">
+                    <h2>Регіональний центр з надання безоплатної вторинної правової допомоги у Львівській області</h2>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        <br><br>
+                        Посилання на сайт: <a href="https://legalaid.gov.ua/">тут</a>
+                    </span>
+                </div>
+                <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+            </div>
+
+            <div class="center-card">
+                <img src="law4.png">
+                <div class="card-content">
+                    <h2>Програма юридичної допомоги БФ «Право на захист»</h2>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        <br><br>
+                        
+                    </span>
+                </div>
+                <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+            </div>
+
+        </section>
+    </div>
+    <script src="info-containers.js"></script>
+</body>
+</html>

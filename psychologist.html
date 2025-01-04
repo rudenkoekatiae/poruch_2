@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поруч</title>
+    <link rel="stylesheet" href="law-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="psychologist">
+    <div >
+        <div class="search-container">
+            <span class="search-icon">
+                <img src=Search.png width="50" height="50">
+            </span>
+
+            <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+        </div>
+        <div class="header-container">
+            <a href="info.html" class="back-button">
+                <img src=arrow.png alt="Психолог" width="40" height="40">
+            </a>
+            <h1 class="page-title">Центри психологічного здоров’я</h1>
+        </div>
+        <div class="container">
+
+            <section class="region-selection">
+                <span>Регіон: Львівщина</span>
+
+            </section>
+            <section class="centers">
+                <h2>
+                    Психологічна підтримка для постраждалих від війни
+                </h2>
+
+                <div class="center-card">
+                    <img src="psy1.png" alt="Лого">
+                    <div class="card-content">
+                        <h2>Шпиталь Шептицького</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Розпочав новий соціальний
+                            проєкт, спрямований на забезпечення психологічної
+                            підтримки внутрішньо переміщених осіб (ВПО) та тим, хто постраждав внаслідок війни в Україні.
+                            <br><br>
+                            Посилання на Facebook-сторінку: <a href="https://spital.org.ua/supportfrp/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="psy2.png">
+                    <div class="card-content">
+                        <h2>Коло Сім’ї</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            «Коло Сім’ї» - центр психічного здоров'я, що працює у концепції супроводу особи та членів її родини впродовж усіх етапів життєвого циклу.
+                            У серці нашої турботи – усі члени родини: діти, молодь, дорослі, люди літнього віку.
+                            <br><br>
+                            Посилання на сайт: <a href="https://k-s.org.ua/branches/lviv/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="psy3.png">
+                    <div class="card-content">
+                        <h2>PROJECT HOPE</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            — безоплатна психологічна та психосоціальна допомога ВПО та місцевим громадам .
+                            <br><br>
+                            Посилання на сайт: <a href="https://www.projecthope.org/region/europe/ukraine/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="psy4.png">
+                    <div class="card-content">
+                        <h2>medpsy_lviv</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Мета: психологічна та медична підтримка/допомога людям, які потерпіли в період війни та сьогодні вимушено знаходяться далеко від дому.
+                            <br><br>
+                            Посилання на сайт: <a href="https://www.facebook.com/medpsylviv/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <script src="info-containers.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поруч</title>
+    <link rel="stylesheet" href="law-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="humanitarian">
+    <div>
+        <div class="search-container">
+            <span class="search-icon">
+                <img src=Search.png width="50" height="50">
+            </span>
+
+            <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+        </div>
+        <div class="header-container">
+            <a href="info.html" class="back-button">
+                <img src=arrow.png alt="Психолог" width="40" height="40">
+            </a>
+            <h1 class="page-title">Гуманітарна допомога від перевірених організацій</h1>
+        </div>
+        <div class="container">
+
+            <section class="region-selection">
+                <span>Регіон: Львівщина</span>
+
+            </section>
+            <section class="centers">
+                <h2>
+                    Гуманітарна підтримка для постраждалих
+                    від війни
+                </h2>
+
+                <div class="center-card">
+                    <img src="hum1.png" alt="Лого">
+                    <div class="card-content">
+                        <h2>ЯМаріуполь.Львів</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Центр надає гуманітарну допомогу переселенцям з Маріуполя, які евакуювались до Львова.
+                            Також у “ЯМаріуполь. Львів” ВПО можуть отримати безкоштовну допомогу психолога та правозахисників
+                            <br><br>
+                            Посилання на сторінку: <a href="https://www.mhelp.org.ua/locations/tsentr-yamariupol-lviv">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="hum2.png">
+                    <div class="card-content">
+                        <h2>Гуманітарний хаб для ВПО</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            з Луганської області працюють у Львові. Сюди переселенці можуть звернутися за різною допомогою: гуманітарною, правовою, психологічною.
+                            <br><br>
+                            Посилання на сайт: <a href="https://starobelsk.lg.ua/pres-tsentr/novyny/item/941-pratsiuie-humanitarnyi-khab">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="hum3.png">
+                    <div class="card-content">
+                        <h2>Соціальна комора</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            У благодійному фонді “Анни-Марії” надають гуманітарну допомогу переселенцям. Тут можна отримати одяг та взуття, а при першому зверненні — продуктові набори.
+                            <br><br>
+                            Посилання на сайт: <a href="https://anna-maria.org.ua/campaigns/komora/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="hum4.png">
+                    <div class="card-content">
+                        <h2>Карітас Львів</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Надає гуманітарну допомогу у Львові та області переселенцям. В рамках проєкту “Мотанка” ВПО можуть отримати продуктові та гігієнічні набори. Також тут працює кризовий центр для внутрішньо переміщених осіб.
+                            <br><br>
+                            Посилання на сайт: <a href="http://caritas-lviv.org/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <script src="info-containers.js"></script>
+</body>
+</html>

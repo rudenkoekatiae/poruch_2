@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поруч</title>
+    <link rel="stylesheet" href="law-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="education">
+    <div>
+        <div class="search-container">
+            <span class="search-icon">
+                <img src=Search.png width="50" height="50">
+            </span>
+
+            <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+        </div>
+        <div class="header-container">
+            <a href="info.html" class="back-button">
+                <img src=arrow.png alt="Психолог" width="40" height="40">
+            </a>
+            <h1 class="page-title">Розвиток та перекваліфікація для кожного</h1>
+        </div>
+        <div class="container">
+
+            <section class="region-selection">
+                <span>Регіон: Львівщина</span>
+
+            </section>
+            <section class="centers">
+                <h2>
+                    Освітні можливості та перекваліфікації для постражлалих від війни
+                </h2>
+
+                <div class="center-card">
+                    <img src="ed1.png" alt="Лого">
+                    <div class="card-content">
+                        <h2>Lviv Open Lab</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            У Львові працює міський молодіжний центр, який є й простором для популяризації науки.
+                            Тут проводять лекції та навчальні заходи для молоді.
+                            <br><br>
+                            Посилання на Facebook-сторінку: <a href="https://www.facebook.com/LvivOpenLab/?locale=uk_UA">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="ed2.png">
+                    <div class="card-content">
+                        <h2>МолоДвіжЦентр.Львів</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Тут можна отримати робоче місце, долучитися до спільного перегляду фільму
+                            або навіть пограти у приставку, забронювавши час заздалегідь.
+                            <br><br>
+                            Посилання на Facebook-сторінку: <a href="https://www.facebook.com/molodvizhcenter/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="ed3.png">
+                    <div class="card-content">
+                        <h2>Леотека</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Леотека - простір для читання, навчання, розвитку і розваг.
+                            Відкрита для дітей від 0 до 100 років.
+                            <br><br>
+                            Посилання на сайт: <a href="https://lodb.org.ua/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+                <div class="center-card">
+                    <img src="ed4.png">
+                    <div class="card-content">
+                        <h2>Державна служба зайнятості</h2>
+                        <p class="short-text"></p>
+                        <span class="full-text" style="display: none;">
+                            Отримайте курси перепідготовки, ваучери на навчання, гранти для власної справи,
+                            компенсації і багато інших послуг в Державній службі зайнятості!
+                            <br><br>
+                            Посилання на сайт: <a href="https://www.dcz.gov.ua/">тут</a>
+                        </span>
+                    </div>
+                    <button class="arrow-button" onclick="toggleCard(this)">▼</button>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <script src="info-containers.js"></script>
+</body>
+</html>

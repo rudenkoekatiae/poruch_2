@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <link rel="stylesheet" href="entertainment.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заклади</title>
+    <body>
+        <div>
+            <div class="search-container">
+                <span class="search-icon">
+                    <img src=Search.png width="50" height="50">
+                </span>
+    
+                <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+            </div>    </div>
+    <div class="header-container">
+        <a href="profile.html" class="back-button">
+            <img src=arrow.png alt="Назад" width="40" height="40">
+        </a>
+        <h1 class="page-title">Кафе та ресторани</h1>
+    </div>
+    <div class="container">
+
+        <section class="region-selection">
+            <img src=heart.png alt = "Серце" width="10" height="10">
+            <span>Перелік закладів, які надають знижки для військових чи пригощають смачною львівською кавою</span>
+
+        </section>
+
+        <section class="centers">
+
+            <div class="center-card">
+                <img src="kaviarnia-virmenka.png" alt="Лого">
+                <div class="card-content">
+                    <h2>Кав'ярня Вірменка</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        вул. Вірменська, 19 | 9:00-22:00 –
+ культова кав'ярня у Львові, місце зустрічей представників мистецького андеґраунду і контркультури.
+спеціальна пропозиція: безкоштовна класична кава
+                   <br><br>    
+                    Посилання на сайт <a href="https://virmenka.com.ua/">тут</a>
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="valentino.png">
+                <div class="card-content">
+                    <h2>Валентино</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        вул. Нижанківського,20 | 8:00-22:00 –
+                        ресторан, де можна скуштувати страви італійської та української  кухні. В теплу пору року піднімайтесь на літню терасу, щоб одночасно насолоджуватись смачної їжею та чудовою панорамою  старовинного Львова.
+                        спеціальна пропозиція: знижка 20% 
+                        <br><br>    
+                    Посилання на сайт <a href="https://valentino.lviv.ua/">тут</a>
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="atlias.png">
+                <div class="card-content">
+                    <h2>Атляс</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        пл. Ринок, 45 | 9:00-23:00 - 
+
+ресторан із затишною атмосферою, де готують страви української та європейської кухні. 
+ спеціальна пропозиція: пригощають напоями - кава/чай, а також  першими стравами та салатами
+               <br><br>
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="hasova-liampa.png">
+                <div class="card-content">
+                    <h2>Гасова Лямпа</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        вул. Вірменська, 20 | пн-пт 12:00-23:00; сб-нд 11:00 - 23:00 
+ресторація-музей, в якому можна не тільки смачно поїсти, тут представлена унікальна колекція гасових лямп
+спеціальна пропозиція: безкоштовна кава
+                    <br><br>    
+                    Посилання на сайт <a href="https://www.fest.lviv.ua/uk/restaurants/gasovalampa/">тут</a>
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+</div>
+<script src="info-containers.js"></script>
+</body>
+</html>
+<script>
+function toggleInfo(button) {
+    const cardContent = button.parentElement; 
+    const fullText = cardContent.querySelector('.full-text'); 
+    const shortText = cardContent.querySelector('.short-text'); 
+    
+    if (fullText.style.display === 'none') {
+        fullText.style.display = 'block'; 
+        button.textContent = 'Менше <'; 
+    } else {
+        fullText.style.display = 'none'; 
+        button.textContent = 'Більше >';    
+    }
+}
+</script>

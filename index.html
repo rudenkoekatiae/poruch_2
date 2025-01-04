@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поруч</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="health-page">
+        <header class="page-header">
+            <span1>Здоров'я</span1>
+
+        </header>
+
+        <div class="update-section">
+            <span>Годину тому</span>
+            <button class="refresh-button">
+                <img src=reload.png width="16" height="16">
+            </button>
+        </div>
+
+        <div class="cards-container">
+            <a href="pulse.html" class="card-pulse">
+                <div class="cards-content">
+                    <div class="icon">
+                        <img src=pulse.png width="16" height="16">
+                        <p>Серцебиття</p>
+                    </div>
+                    <div class="value-container">
+                        <h2>78</h2>
+                        <small>уд/хв</small>
+                    </div>
+                </div>
+            </a>
+            <a href="steps.html" class="card-steps">
+                <div class="cards-content">
+                    <div class="icon">
+                        <img src=steps.png width="16" height="16">
+                        <p>Кроки</p>
+                    </div>
+                    <div class="value-container">
+                        <h2>24</h2>
+                        <small>кроків</small>
+                    </div>
+                </div>
+            </a>
+            <a href="energy.html" class="card-energy">
+                <div class="cards-content">
+                    <div class="icon">
+                        <img src=energy.png width="16" height="16">
+                        <p>Активність</p>
+                    </div>
+                    <div class="value-container">
+                        <h2>10</h2>
+                        <small>хв</small>
+                    </div>
+
+                </div>
+
+            </a>
+            <a href="sleep.html" class="card-sleep">
+                <div class="cards-content">
+                    <div class="icon">
+                        <img src=sleep.png width="16" height="16">
+                        <p>Сон</p>
+                    </div>
+                    <div class="value-container">
+                        <h2>8</h2>
+                        <small>годин</small>
+                    </div>
+                </div>
+            </a>
+            <a href="stess.html" class="card-stress">
+                <div class="cards-content">
+                    <div class="icon">
+                        <img src=stress.png width="16" height="16">
+                        <p>Рівень стресу</p>
+                    </div>
+                    <div class="value-container">
+                        <h2>Низький</h2>
+                    </div>
+                </div>
+
+            </a>
+            <a href="oxygen.html" class="card-oxygen">
+                <div class="cards-content">
+                    <div class="icon">
+                        <img src=oxygen.png width="16" height="16">
+                        <p>Рівень кисню</p>
+                    </div>
+                    <div class="value-container">
+                        <h2>98</h2>
+                        <small>%</small>
+                    </div>
+                </div>
+
+            </a>
+</div>
+
+    </div>
+
+        <div class="navbar">
+            <a href=chill.html>
+                <img src=Settings.png alt="Налаштування" width="30" height="32">
+            </a>
+
+            <a href=index.html class="active">
+                <img src=Home.png alt="Годинник" width="30" height="30">
+            </a>
+
+            <a href=info.html>
+                <img src=Info.png alt="Інформація" width="30" height="32">
+            </a>
+
+            <a href=profile.html>
+                <img src=Calendar.png alt="Події/Дозвілля" width="30" height="32">
+
+            </a>
+        </div>
+        <script>
+            if (window.innerWidth > 600) {
+                document.body.innerHTML = "<h2 style='text-align:center; color:red;'>Цей сайт доступний лише для мобільних пристроїв.</h2>";
+            }
+        </script>
+    
+</body>
+</html>

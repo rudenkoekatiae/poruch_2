@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <link rel="stylesheet" href="chill.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Налаштування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Налаштування</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук в налаштуваннях">
+        </div>
+        <a href="privacy.html" class="setting">
+            <img src=policy.png alt="Policy" width="30" height="30">
+            <div class="setting-text">
+                <span class="title">Політика конфіденційності</span>
+                <span class="description">Безпека, умови використання</span>
+            </div>
+        </a>
+        <a href="edit.html" class="setting">
+            <img src=user_2.png alt="User" width="30" height="30">
+            <div class="setting-text">
+                <span class="title">Редагування профілю</span>
+                <span class="description">Ім'я, електронна пошта, номер телефону, пароль</span>
+            </div>
+        </a>
+        <div class="setting" onclick="showPopup('notifications')">
+            <img src=notification.png alt="Notification" width="30" height="30">
+            <div class="setting-text">
+                <span class="title">Сповіщення</span>
+                <span class="description">Увімкнути/вимкнути сповіщення для конкретних категорій</span>
+            </div>
+        </div>
+        <div class="setting" onclick="showPopup('themes')">
+            <img src=themes.png alt="Themes" width="30" height="30">
+            <div class="setting-text">
+                <span class="title">Теми</span>
+                <span class="description">Вибір кольорової теми (темна/світла)</span>
+            </div>
+        </div>
+        <div class="setting" onclick="showPopup('language')">
+            <img src=languages.png alt="Languages" width="30" height="30">
+            <div class="setting-text">
+                <span class="title">Мова інтерфейсу</span>
+                <span class="description">Змінити мову</span>
+            </div>
+        </div>
+        <div class="setting" onclick="showPopup('delete_account')">
+            <img src=logout.png alt="logout" width="30" height="30">
+            <div class="setting-text">
+                <span class="title">Видалення акаунту</span>
+                <span class="description">Опція "Вийти з усіх пристроїв"</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="hidePopup()"></div>
+
+    <script>
+        function showPopup(id) {
+            document.getElementById(id).classList.add('active');
+            document.getElementById('overlay').classList.add('active');
+        }
+    
+        function hidePopup() {
+            document.querySelectorAll('.popup').forEach(popup => popup.classList.remove('active'));
+            document.getElementById('overlay').classList.remove('active');
+        }
+    </script>
+      <div class="navbar">
+        <a href=chill.html  class="active">
+            <img src=Settings.png alt="Налаштування" width="30" height="32">
+        </a>
+        <a href=index.html>
+            <img src=Home.png alt="Годинник" width="30" height="30">
+        </a>
+        <a href=info.html>
+            <img src=Info.png alt="Інформація" width="30" height="32">
+        </a>
+        <a href=profile.html>
+            <img src=Calendar.png alt="Події/Дозвілля" width="30" height="32">
+        </a>
+    </div>
+</body>
+</html>

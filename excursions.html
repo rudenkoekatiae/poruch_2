@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <link rel="stylesheet" href="entertainment.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екскурсії</title>
+    <body>
+        <div>
+            <div class="search-container">
+                <span class="search-icon">
+                    <img src=Search.png width="50" height="50">
+                </span>
+    
+                <input type="text" id="searchInput" placeholder="Пошук..." class="search-input">
+            </div>    </div>
+    <div class="header-container">
+        <a href="profile.html" class="back-button">
+            <img src=arrow.png alt="Назад" width="40" height="40">
+        </a>
+        <h1 class="page-title">Екскурсії</h1>
+    </div>
+    <div class="container">
+
+        <section class="region-selection">
+            <span>Регіон: Львівщина</span>
+
+        </section>
+        <section class="centers">
+
+            <div class="center-card">
+                <img src="chudo-train.png" alt="Лого">
+                <div class="card-content">
+                    <h2>Екскурсія на “Чудо поїзді”</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        Поїзд 	курсує щоденно, від пл. Ринок, 1
+
+                        Ви 	дізнаєтесь багато цікавого про Львів, 	його мальовничі куточки та історичні 	пам’ятки.
+                        11:00 	- 16:00 (відправлення щогодини)
+                        Для 	УБД та на дитячий квиток діють знижки, 	вартість екскурсії - 100 грн
+                        можливі 	додаткові години екскурсій залежно 	від сезону
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+
+            <div class="center-card">
+                <img src="tourism.png">
+                <div class="card-content">
+                    <h2>Екскурсії від Центру Туристичної Інформації</h2>
+                    <div class="gradient-line"></div>
+                    <p class="short-text"></p>
+                    <span class="full-text" style="display: none;">
+                        Пішохідні 	та автобусні екскурсії по Львову. Виїзні 	тури за місто до замків Львівщини, у 	Карпати та мальовниче Закарпаття
+                        Для 	всіх військовослужбовців, учасників 	АТО та УБД діють знижки (знижка -20% на 	тур чи екскурсію)
+                    </span>
+                </div>
+                <button class="toggle-info" onclick="toggleInfo(this)">Більше ></button>
+            </div>
+</div>
+<script src="info-containers.js"></script>
+</body>
+</html>
+<script>
+function toggleInfo(button) {
+    const cardContent = button.parentElement; 
+    const fullText = cardContent.querySelector('.full-text'); 
+    const shortText = cardContent.querySelector('.short-text'); 
+    
+    if (fullText.style.display === 'none') {
+        fullText.style.display = 'block'; 
+        button.textContent = 'Менше <'; 
+    } else {
+        fullText.style.display = 'none'; 
+        button.textContent = 'Більше >';    
+    }
+}
+</script>
